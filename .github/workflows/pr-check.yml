@@ -1,9 +1,12 @@
-name: Pull Request Checker
+name: Code Quality Checker
 
 on:
   pull_request:
     branches:
       - main
+  push:
+    branches:
+      - hotfix/*
 
 jobs:
   unit-test:
